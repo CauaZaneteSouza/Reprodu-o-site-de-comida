@@ -1,0 +1,71 @@
+/* Reset de alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração do container do grid */
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Grid de 12 colunas */
+    grid-template-rows: auto; /* Altura automática para as linhas de conteúdo */
+    gap: 20px; /* Espaço entre os itens do grid */
+}
+
+/* Definição das áreas do grid para diferentes seções */
+header {
+    background-color: white;
+    color: #00000000;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+#cinza_claro{
+    display: flex;
+    background-color: #f5f5f5;
+
+}
+/*usar pra fazer a parte do lado da logo*/
+.redes_sociais{
+    display: flex;
+    margin-left: 10px;
+    display: block;
+    padding: 10px;
+    opacity: -99;
+}
+.navegar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.hero {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 10px;
+    max-width: 210px;
+    margin: 0 auto;
+
+}
+
+.featured-products {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 10px;
+    max-width: 210px;
+    margin: 0 auto;
+
+}
+
+.newsletter {
+    grid-area: newsletter;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Estilização individual dos elementos (por exemplo, navegação, cards de produtos, etc.) */
+/* Exemplo de estilização da navegação */
